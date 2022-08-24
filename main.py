@@ -1,9 +1,12 @@
-import os
+from kivy.app import App
+
+
+class MainWidget(Widget):
+    pass
 
 
 class TheLabApp(App):
     pass
 
 
-os.getcwd()
 TheLabApp().run()
