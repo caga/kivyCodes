@@ -7,10 +7,10 @@ from kivy.uix.button import Button
 class BoxLayoutExample(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        b1 = Button(text="A")
-        b2 = Button(text="B")
+        b1 = Button(text="CAGATAY")
+        b2 = Button(text="ERTAN")
         self.add_widget(b1)
-        self.add_wigdet(b2)
+        self.add_widget(b2)
 
 
 class MainWidget(Widget):
