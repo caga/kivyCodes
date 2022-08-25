@@ -1,0 +1,13 @@
+BoxLayoutExample:
+
+#MainWidget:
+
+<BoxLayoutExample>:
+    Button:
+        text:'A'
+<MainWidget>:
+    Button:
+        text: "Hello"
+        size: '40dp','40dp'
+        pos: '100dp', '200dp'
+

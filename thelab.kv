@@ -1,8 +1,71 @@
-BoxLayoutExample:
+# AnchorLayoutExample:
+GridLayoutExample:
+
+
+<GridLayoutExample@GridLayout>:
+    #rows
+    #cols
+    cols:3
+    rows:2
+    Button:
+        text:"A"
+    BoxLayoutExample:
+    Button:
+        text:"B"
+    Button:
+        text:"C"
+    Button:
+        text:"D"
+    Button:
+        text:"E"
+    Button:
+        text:"F"
+
+<AnchorLayoutExample>:
+    #right, left, center
+    anchor_x:"center"
+    anchor_y:"top"
+    BoxLayout:
+        size_hint:.2,.2
+        Button:
+            text:"A"
+        Button:
+            text: "B"
+
+
+# BoxLayoutExample:
 
 #MainWidget:
 
-
+<BoxLayoutExample>:
+    spacing:"10dp"
+    # orientation:"vertical"
+    orientation:"horizontal"
+    Button:
+        text:'A'
+        size_hint:.5,.5
+        # size:"100dp","60dp"
+        # width:"100dp"
+        # height:"60dp"
+        #x,center_x,right
+        # y,center_y,top
+        # pos_hint:{"x":.1}
+        # pos_hint:{"center_x":.5}
+        pos_hint:{"center_y":.5}
+    BoxLayout:
+        spacing:"10dp"
+        orientation:"vertical"
+        Button:
+            text:'B1'
+        Button:
+            text:'B2'
+        Button:
+            text:'B3'
+        Button:
+            text:'B4'
+        # size_hint: 1,2 
+    Label:
+        text:'C'
 <MainWidget>:
     Button:
         text: "Hello"
